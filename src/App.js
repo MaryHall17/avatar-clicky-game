@@ -39,6 +39,12 @@ class App extends Component {
            this.setState({ click: cardClickHistory });
            this.setState({ score: tally });
            console.log("history set " + this.state.click[id]);
+            if(tally===12) {
+            alert("we won");
+            this.setState({ score: 0});
+            this.setState({ click: {1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0, 10:0, 11:0, 12:0} });
+            this.setState({ highScore: tally});
+            }
           } else if(this.state.click[id]===1 && this.state.score > this.state.highScore) {
             var reset=0;
             this.setState({ score: reset});

@@ -57,7 +57,7 @@ class App extends Component {
     render () {
         return (
             <Wrapper>
-            <Title>Click Game</Title>
+            <Title>Click Game Current Score: {this.state.score} High Score: {this.state.highScore}</Title>
             {this.state.card.map(card =>
                 <ClickCard
                 //shuffleCard={this.shuffleArray}

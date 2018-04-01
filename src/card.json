@@ -1,0 +1,62 @@
+[
+	{
+		"id": 1,
+		"name": "Aang",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/a/ae/Aang_at_Jasmine_Dragon.png/revision/latest?cb=20130612174003" 
+	},
+	{
+		"id": 2,
+		"name": "Katara",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/7/7a/Katara_smiles_at_coronation.png/revision/latest?cb=20150104171449"
+	},
+	{
+		"id": 3,
+		"name": "Sokka",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/c/cc/Sokka.png/revision/latest?cb=20140905085428"
+	},
+	{
+		"id": 4,
+		"name": "Zuko",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/4/4b/Zuko.png/revision/latest?cb=20140628142636"
+	},
+	{
+		"id": 5,
+		"name": "Iroh",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/c/c1/Iroh_smiling.png/revision/latest?cb=20130626131914"
+	}, 
+	{
+		"id": 6,
+		"name": "Toph",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/4/46/Toph_Beifong.png/revision/latest?cb=20131230122047"
+	},
+	{
+		"id": 7,
+		"name": "Suki",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/1/14/Suki.png/revision/latest?cb=20130819094354"
+	},
+	{
+		"id": 8,
+		"name": "Momo",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/4/43/Inquisitive_Momo.png/revision/latest?cb=20081225191217"
+	},
+	{
+		"id": 9,
+		"name": "Appa",
+		"image": "http://images4.fanpop.com/image/photos/15700000/Appa-avatar-the-last-airbender-15716094-427-270.jpg"
+	},
+	{
+		"id": 10,
+		"name": "Mai",
+		"image": "https://vignette.wikia.nocookie.net/villains/images/3/37/Mai_Avatar.jpg/revision/latest?cb=20110213162307"
+	},
+	{
+		"id": 11,
+		"name": "Ty Lee",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/6/6d/Ty_Lee.png/revision/latest?cb=20140905083814"
+	},
+	{
+		"id": 12,
+		"name": "Yue",
+		"image": "https://vignette.wikia.nocookie.net/avatar/images/9/9d/Kind_Yue.png/revision/latest?cb=20140122221734"
+	}
+]

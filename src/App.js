@@ -13,22 +13,31 @@ class App extends Component {
         highScore: 0
      };
 
-   shuffleArray = card => {
-   let i = 0;
-    for (i = 0; i < card.length; i++) {
-        const j = Math.floor(Math.random() * (i + 1));
-        const temp = card[i]
-        card[i] = card[j]
-        card[j] = temp;
-     } 
-     this.setState({ card });
-  };
 
+  shuffleArray = card =>  {
+    let i = 0;
+    for (; i < card.length; i++) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = card[i];
+        card[i] = card[j];
+        card[j] = temp;
+       }
+       return card;
+       this.setState({ card: card });
+    }
 
 
     tallyScore = id => { 
+        let i = 0;
+        for (; i < card.length; i++) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = card[i];
+        card[i] = card[j];
+        card[j] = temp;
+       }
+       this.setState({ card: card });
         if(this.state.click[id]===0) {
-            console.log("original score: " + this.state.score);
+           console.log("original score: " + this.state.score);
            var cardClickHistory=this.state.click;
            var tally=this.state.score;
            console.log("click " + cardClickHistory);
@@ -38,7 +47,7 @@ class App extends Component {
            console.log("after " + tally);
            this.setState({ click: cardClickHistory });
            this.setState({ score: tally });
-           console.log("history set " + this.state.click[id]);
+           console.log("history set " + this.state.click[id]); 
             if(tally===12) {
             alert("we won");
             this.setState({ score: 0});
@@ -66,7 +75,7 @@ class App extends Component {
             <Title>Click Game Current Score: {this.state.score} High Score: {this.state.highScore}</Title>
             {this.state.card.map(card =>
                 <ClickCard
-                //shuffleCard={this.shuffleArray}
+                shuffleArray={this.shuffleArray}
                 tallyScore={this.tallyScore}
                 id={card.id}
                 image={card.image}

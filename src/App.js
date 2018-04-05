@@ -13,20 +13,6 @@ class App extends Component {
         highScore: 0
      };
 
-
-  shuffleArray = card =>  {
-    let i = 0;
-    for (; i < card.length; i++) {
-        const j = Math.floor(Math.random() * (i + 1));
-        const temp = card[i];
-        card[i] = card[j];
-        card[j] = temp;
-       }
-       return card;
-       this.setState({ card: card });
-    }
-
-
     tallyScore = id => { 
         let i = 0;
         for (; i < card.length; i++) {
@@ -72,10 +58,9 @@ class App extends Component {
     render () {
         return (
             <Wrapper>
-            <Title>Click Game Current Score: {this.state.score} High Score: {this.state.highScore}</Title>
+            <Title>Click Game || Current Score: {this.state.score} || High Score: {this.state.highScore}</Title> 
             {this.state.card.map(card =>
                 <ClickCard
-                shuffleArray={this.shuffleArray}
                 tallyScore={this.tallyScore}
                 id={card.id}
                 image={card.image}
